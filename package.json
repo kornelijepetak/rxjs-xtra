@@ -1,0 +1,55 @@
+{
+    "name": "@fritech/rxjs-xtra",
+    "author": "Kornelije Petak - Friday Technologies",
+    "description": "An assorted set of goodies for use with rxjs.",
+    "version": "1.0.0",
+    "license": "MIT",
+    "type": "module",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kornelijepetak/rxjs-xtra.git"
+    },
+    "homepage": "https://github.com/kornelijepetak/rxjs-xtra#readme",
+    "bugs": {
+        "url": "https://github.com/kornelijepetak/rxjs-xtra/issues"
+    },
+    "keywords": [
+        "rxjs",
+        "utilities",
+        "observable"
+    ],
+    "publishConfig": {
+        "access": "public"
+    },
+    "files": [
+        "dist/**",
+        "README.md",
+        "LICENSE"
+    ],
+    "types": "./dist/index.d.ts",
+    "exports": {
+        ".": {
+            "import": "./dist/index.js",
+            "types": "./dist/index.d.ts"
+        }
+    },
+    "scripts": {
+        "dev": "vite",
+        "build": "tsc && vite build",
+        "preview": "vite preview",
+        "prepublishOnly": "npm run build"
+    },
+    "peerDependencies": {
+        "rxjs": "^7.8.2"
+    },
+    "devDependencies": {
+        "rxjs": "^7.8.2",
+        "typescript": "~5.9.3",
+        "vite": "^7.3.1",
+        "vite-plugin-dts": "^4.5.4",
+        "vitest": "^4.0.18"
+    },
+    "overrides": {
+        "minimatch": "^10.2.4"
+    }
+}
