@@ -4,7 +4,7 @@ import { BehaviorSubject as RxBehaviorSubject } from "rxjs"
 
 test("BehaviorSubjectXtra extends BehaviorSubject", () => {
     const subject = new BehaviorSubject(0)
-    expect(subject instanceof RxBehaviorSubject).toBe(true)
+    expect(subject).toBeInstanceOf(RxBehaviorSubject)
 })
 
 test("BehaviorSubjectXtra.update correctly updates the subject's value", () => {
